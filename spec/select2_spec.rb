@@ -25,7 +25,7 @@ describe 'Select2', :select2 do
 
 
 
-
+#TODO   
             describe('multiple') do 
                 before(:each) do    
                 end
