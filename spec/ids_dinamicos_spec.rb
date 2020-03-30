@@ -16,5 +16,4 @@ describe 'IDs Dinamicos', :ids_dinamicos do
 
         expect(page).to have_content 'Dados enviados. Aguarde aprovação do seu cadastro!'
     end   
-  
 end
