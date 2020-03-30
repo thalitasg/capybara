@@ -18,6 +18,13 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 
   config.include Capybara::DSL
+
+  config.before(:example) do
+    page.current_window.resize_to(1280, 800)
+  end
+end
+
+
 end
 
 Capybara.configure do |config|
