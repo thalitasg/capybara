@@ -20,7 +20,10 @@ RSpec.configure do |config|
   config.include Capybara::DSL
 
   config.before(:example) do
-    page.current_window.resize_to(1280, 800)
+    #page.current_window.resize_to(1280, 800)
+
+    #full HD
+    page.current_window.resize_to(1920, 1080)
   end
 
   config.after(:example) do |e|
@@ -34,6 +37,7 @@ Capybara.configure do |config|
   #config.default_driver = :selenium
 
   #Chrome
+ # config.default_driver = :selenium_chrome_headless
   config.default_driver = :selenium_chrome
   config.default_max_wait_time = 5
   config.app_host = 'https://training-wheels-protocol.herokuapp.com'
