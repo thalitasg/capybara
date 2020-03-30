@@ -4,7 +4,7 @@
 describe 'Login com Cadastro', :login do
 
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/access'
+        visit '/access'
     
     end
 

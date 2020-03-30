@@ -3,14 +3,14 @@
 
 describe 'Caixa de opções'  do
     it 'item especifico simples' do
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'    
+        visit '/dropdown'    
         #Buscar elemento por id 
         select('Steve Rogers', from: 'dropdown') 
         sleep 3
     end   
 
     it 'item especifico com o find' do
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'  
+        visit '/dropdown'  
         #Buscar elemento por cssselector  
         drop = find('.avenger-list')
         drop.find('option', text: 'Scott Lang').select_option
@@ -18,7 +18,7 @@ describe 'Caixa de opções'  do
     end  
 
     it 'qualquer item', :dropdown do
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'  
+        visit '/dropdown'  
         #Buscar elemento por cssselector  
         drop = find('.avenger-list')
         #sample faz o sorteio de um elemento no array
